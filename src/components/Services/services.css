@@ -1,0 +1,32 @@
+.services {
+  padding-block: 30px;
+}
+.services .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+.services .container .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  font-weight: 700;
+  font-size: 18px;
+  border: 1px solid var(--primary-color);
+  border-radius: 50px;
+  padding-block: 10px;
+}
+.services .container .item i {
+  font-size: 30px;
+}
+
+@media (max-width: 767px) {
+  .services .container .item {
+    font-size: 15px;
+    padding-block: 5px;
+  }
+  .services .container .item i {
+    font-size: 25px;
+  }
+}
