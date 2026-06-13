@@ -1,0 +1,105 @@
+.book-slider {
+  padding: 20px 10px;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.book-slider .arrows {
+  width: 99%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 5;
+}
+.book-slider .arrows .icon {
+  width: 35px;
+  height: 65px;
+  background-color: #222323;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.book-slider .arrows .icon i {
+  color: #fff;
+  font-size: 22px;
+}
+.book-slider .container {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 0;
+  text-align: center;
+  transition: 0.4s linear;
+}
+.book-slider .item {
+  width: 320px;
+  border: 1px solid #808080;
+  padding-block: 5px;
+  background-color: #f9fbff;
+}
+.book-slider .item .image {
+  width: 320px;
+}
+.book-slider .item .image img {
+  max-width: 50%;
+}
+.book-slider .item .content {
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex: 1;
+}
+.book-slider .item .content .rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.book-slider .item .content .rating .stars i {
+  color: #ffd700;
+  padding-right: 2px;
+  font-size: 17px;
+}
+.book-slider .item .content .rating .count {
+  color: #ffd700;
+  font-size: 13px;
+  font-weight: 600;
+}
+.book-slider .item .content .rating .reviews {
+  font-size: 12px;
+  color: #808080;
+  font-weight: 600;
+}
+.book-slider .item .content .price {
+  color: crimson;
+  font-weight: 700;
+  font-size: 17px;
+}
+.book-slider .item .icons {
+  font-size: 20px;
+  color: #38373b;
+}
+.book-slider .item .icons .eye {
+  padding-right: 8px;
+}
+
+@media (max-width: 767px) {
+  .book-slider {
+    padding: 10px;
+  }
+  .book-slider .arrows {
+    left: 0;
+  }
+  .book-slider .container {
+    padding: 0;
+  }
+}
