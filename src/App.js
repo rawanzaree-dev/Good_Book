@@ -6,6 +6,7 @@ import { mostGiftedBooks } from "./data/books";
 import { bestSeller } from "./data/books";
 import {mostWishedFor} from "./data/books";
 import Heading from "./components/heading/Heading";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <BookSlider data={bestSeller} folder_name={"best-seller-books"} />
       <Heading title={"Most Wished For"} />
       <BookSlider data={mostWishedFor} folder_name={"most-wished-for"} />
+      <Footer />
     </div>
   );
 }
