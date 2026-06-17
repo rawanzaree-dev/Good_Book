@@ -90,6 +90,7 @@
 }
 .book-slider .item .icons .eye {
   padding-right: 8px;
+  cursor: pointer;
 }
 
 @media (max-width: 767px) {

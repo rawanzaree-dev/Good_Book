@@ -1,0 +1,171 @@
+.modal {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal .wrapper {
+  background-color: #fff;
+  width: 80%;
+  height: 90%;
+  position: relative;
+  padding: 10px;
+  border-radius: 10px;
+}
+.modal .wrapper .icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #dc143c;
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+.modal .wrapper .content {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-inline: auto;
+  gap: 25px;
+  padding: 10px;
+}
+.modal .content img {
+  height: 95%;
+}
+.modal .content .col {
+  padding-left: 30px;
+  height: 80%;
+}
+.modal .content .col > * {
+  margin-bottom: 15px;
+}
+.modal .content .col h2 {
+  font-size: 28px;
+}
+.modal .content .rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.modal .content .rating .stars i {
+  color: #ffd700;
+  padding-right: 2px;
+  font-size: 17px;
+}
+.modal .content .rating .count {
+  color: #ffd700;
+  font-size: 13px;
+  font-weight: 600;
+}
+.modal .content .rating .reviews {
+  font-size: 12px;
+  color: #808080;
+  font-weight: 600;
+}
+.modal .content .col p span {
+  font-weight: 700;
+  font-size: 18px;
+  color: #000;
+}
+.modal .content .col .author,
+.modal .content .col .price {
+  font-weight: 600;
+  font-size: 17px;
+}
+.modal .content .col .author {
+  color: #008080;
+}
+.modal .content .col .price {
+  color: #dc143c;
+}
+.modal .content .col .add-to-cart input {
+  width: 80px;
+  font-size: 18px;
+  margin: 0 10px 10px 0;
+  padding: 2px;
+  border: 1px solid #000;
+}
+.modal .content .col .add-to-cart button {
+  background-color: #fff;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  padding: 2px 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.modal .content .col .add-to-cart button i {
+  margin-right: 5px;
+}
+.modal .content .col .details {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  .modal .wrapper .icon {
+  width: 25px;
+  height: 25px;
+  font-size: 16px;
+}
+  .modal .wrapper .content {
+    justify-content: center;
+  }
+  .modal .content img {
+    display: none;
+  }
+  .modal .content .col {
+    padding-left: 0;
+  }
+  .modal .content .col h2 {
+    font-size: 25px;
+  }
+  .modal .content .rating {
+    gap: 5px;
+  }
+  .modal .content .rating .stars i {
+    font-size: 15px;
+  }
+  .modal .content .col .add-to-cart input {
+    width: 60px;
+  }
+  .modal .content .col .details {
+    padding: 8px;
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .modal .wrapper .content {
+    justify-content: center;
+  }
+  .modal .content img {
+    height: 90%;
+  }
+  .modal .content .col {
+    padding-left: 10px;
+  }
+  .modal .content .col h2 {
+    font-size: 25px;
+  }
+  .modal .content .col .details {
+    padding: 8px;
+    font-size: 16px;
+  }
+}
