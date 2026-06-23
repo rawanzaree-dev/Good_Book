@@ -54,26 +54,6 @@
 .modal .content .col h2 {
   font-size: 28px;
 }
-.modal .content .rating {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.modal .content .rating .stars i {
-  color: #ffd700;
-  padding-right: 2px;
-  font-size: 17px;
-}
-.modal .content .rating .count {
-  color: #ffd700;
-  font-size: 13px;
-  font-weight: 600;
-}
-.modal .content .rating .reviews {
-  font-size: 12px;
-  color: #808080;
-  font-weight: 600;
-}
 .modal .content .col p span {
   font-weight: 700;
   font-size: 18px;
@@ -85,7 +65,10 @@
   font-size: 17px;
 }
 .modal .content .col .author {
-  color: #008080;
+  color: var(--text-color);
+}
+.rating {
+  justify-content: flex-start;
 }
 .modal .content .col .price {
   color: #dc143c;
@@ -121,10 +104,10 @@
 
 @media (max-width: 767px) {
   .modal .wrapper .icon {
-  width: 25px;
-  height: 25px;
-  font-size: 16px;
-}
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+  }
   .modal .wrapper .content {
     justify-content: center;
   }
@@ -137,10 +120,10 @@
   .modal .content .col h2 {
     font-size: 25px;
   }
-  .modal .content .rating {
+  .rating {
     gap: 5px;
   }
-  .modal .content .rating .stars i {
+  .rating .stars i {
     font-size: 15px;
   }
   .modal .content .col .add-to-cart input {

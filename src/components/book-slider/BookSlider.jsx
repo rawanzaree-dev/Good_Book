@@ -1,6 +1,7 @@
 import Modal from "../modal/Modal";
+import Rating from "../rating/Rating";
+import "../rating/rating.css";
 import "./book-slider.css";
-import Rating from "./Rating";
 import { useState } from "react";
 
 export default function BookSlider({ data, folder_name }) {
