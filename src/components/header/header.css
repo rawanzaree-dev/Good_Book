@@ -49,6 +49,7 @@ header .middle-header .logo {
     display: flex;
     align-items: center;
     gap: 5px;
+    color: #fff;
 }
 header .middle-header .logo i,
 header .middle-header .cart-icon {
@@ -74,6 +75,9 @@ header .middle-header .search-engine i {
     color: #808080;
     font-size: 20px;
 }
+header .middle-header .cart-icon {
+    color: #fff;
+}
 header nav {
     background-color: var(--main-color);
     height: 50px;
@@ -91,9 +95,10 @@ header nav ul {
     align-items: center;
     gap: 20px;
 }
-header nav ul li {
+header nav ul .li-item {
     padding-inline: 5px;
     font-size: 17px;
+    color: #000;
 }
 
 @media (max-width: 767px) {

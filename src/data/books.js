@@ -11,6 +11,7 @@ export const mostGiftedBooks = [
     language: "English",
     PublicationDate: "16 April 2018",
     inStock: true,
+    category: "gifted",
   },
   {
     id: 2,
@@ -24,6 +25,7 @@ export const mostGiftedBooks = [
     language: "English",
     PublicationDate: "1 March 2015",
     inStock: true,
+    category: "gifted",
   },
   {
     id: 3,
@@ -37,6 +39,7 @@ export const mostGiftedBooks = [
     language: "Arabic",
     PublicationDate: "4 December 2018",
     inStock: true,
+    category: "gifted",
   },
   {
     id: 4,
@@ -50,6 +53,7 @@ export const mostGiftedBooks = [
     language: "Arabic",
     PublicationDate: "17 July 2016",
     inStock: true,
+    category: "gifted",
   },
   {
     id: 5,
@@ -63,6 +67,7 @@ export const mostGiftedBooks = [
     language: "English",
     PublicationDate: "1 September 2005",
     inStock: true,
+    category: "gifted",
   },
   {
     id: 6,
@@ -76,6 +81,7 @@ export const mostGiftedBooks = [
     language: "Arabic",
     PublicationDate: "27 April 2017",
     inStock: true,
+    category: "gifted",
   },
   {
     id: 7,
@@ -89,6 +95,7 @@ export const mostGiftedBooks = [
     language: "Arabic",
     PublicationDate: "1 June 2019",
     inStock: true,
+    category: "gifted",
   },
   {
     id: 8,
@@ -102,6 +109,7 @@ export const mostGiftedBooks = [
     language: "English",
     PublicationDate: "8 October 2012",
     inStock: true,
+    category: "gifted",
   },
   {
     id: 9,
@@ -115,6 +123,7 @@ export const mostGiftedBooks = [
     language: "English",
     PublicationDate: "23 March 2017",
     inStock: true,
+    category: "gifted",
   },
   {
     id: 10,
@@ -128,6 +137,7 @@ export const mostGiftedBooks = [
     language: "English",
     PublicationDate: "16 April 2018",
     inStock: false,
+    category: "gifted",
   },
 ];
 
@@ -144,6 +154,7 @@ export const bestSeller = [
     language: "English",
     PublicationDate: "16 April 2018",
     inStock: true,
+    category: "best-seller",
   },
   {
     id: 2,
@@ -157,6 +168,7 @@ export const bestSeller = [
     language: "English",
     PublicationDate: "1 March 2015",
     inStock: true,
+    category: "best-seller",
   },
   {
     id: 3,
@@ -170,6 +182,7 @@ export const bestSeller = [
     language: "English",
     PublicationDate: "4 December 2018",
     inStock: true,
+    category: "best-seller",
   },
   {
     id: 4,
@@ -183,6 +196,7 @@ export const bestSeller = [
     language: "Arabic",
     PublicationDate: "1 June 2019",
     inStock: true,
+    category: "best-seller",
   },
   {
     id: 5,
@@ -196,6 +210,7 @@ export const bestSeller = [
     language: "English",
     PublicationDate: "27 April 2017",
     inStock: true,
+    category: "best-seller",
   },
   {
     id: 6,
@@ -209,6 +224,7 @@ export const bestSeller = [
     language: "English",
     PublicationDate: "23 March 2017",
     inStock: true,
+    category: "best-seller",
   },
   {
     id: 7,
@@ -222,6 +238,7 @@ export const bestSeller = [
     language: "Arabic",
     PublicationDate: "17 July 2016",
     inStock: true,
+    category: "best-seller",
   },
   {
     id: 8,
@@ -235,6 +252,7 @@ export const bestSeller = [
     language: "Arabic",
     PublicationDate: "1 September 2005",
     inStock: true,
+    category: "best-seller",
   },
   {
     id: 9,
@@ -248,6 +266,7 @@ export const bestSeller = [
     language: "Arabic",
     PublicationDate: "8 October 2012",
     inStock: true,
+    category: "best-seller",
   },
   {
     id: 10,
@@ -261,6 +280,7 @@ export const bestSeller = [
     language: "English",
     PublicationDate: "16 April 2018",
     inStock: false,
+    category: "best-seller",
   },
 ];
 
@@ -277,6 +297,7 @@ export const mostWishedFor = [
     language: "English",
     PublicationDate: "8 September 2020",
     inStock: true,
+    category: "wished",
   },
   {
     id: 2,
@@ -290,6 +311,7 @@ export const mostWishedFor = [
     language: "English",
     PublicationDate: "5 January 2016",
     inStock: true,
+    category: "wished",
   },
   {
     id: 3,
@@ -303,6 +325,7 @@ export const mostWishedFor = [
     language: "English",
     PublicationDate: "7 November 1997",
     inStock: true,
+    category: "wished",
   },
   {
     id: 4,
@@ -316,6 +339,7 @@ export const mostWishedFor = [
     language: "English",
     PublicationDate: "1 January 1993",
     inStock: true,
+    category: "wished",
   },
   {
     id: 5,
@@ -329,6 +353,7 @@ export const mostWishedFor = [
     language: "English",
     PublicationDate: "4 May 2021",
     inStock: true,
+    category: "wished",
   },
   {
     id: 6,
@@ -342,6 +367,7 @@ export const mostWishedFor = [
     language: "Arabic",
     PublicationDate: "13 September 2016",
     inStock: true,
+    category: "wished",
   },
   {
     id: 7,
@@ -355,6 +381,7 @@ export const mostWishedFor = [
     language: "English",
     PublicationDate: "1 August 1965",
     inStock: false,
+    category: "wished",
   },
   {
     id: 8,
@@ -368,6 +395,7 @@ export const mostWishedFor = [
     language: "Arabic",
     PublicationDate: "5 February 2019",
     inStock: true,
+    category: "wished",
   },
   {
     id: 9,
@@ -381,6 +409,7 @@ export const mostWishedFor = [
     language: "English",
     PublicationDate: "13 August 2020",
     inStock: true,
+    category: "wished",
   },
   {
     id: 10,
@@ -394,5 +423,6 @@ export const mostWishedFor = [
     language: "English",
     PublicationDate: "20 February 2018",
     inStock: true,
+    category: "wished",
   },
 ];

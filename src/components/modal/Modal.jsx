@@ -1,8 +1,10 @@
+import Rating from "../rating/Rating";
 import "./modal.css";
-import Rating from "../book-slider/Rating";
+import { Link } from "react-router-dom";
 
 export default function Modal({ setOpenModal, bookData, folder_name }) {
-  const { title, inStock, rating, reviews, author, price, image } = bookData;
+  const { title, inStock, rating, reviews, author, price, image, id, category } =
+    bookData;
 
   return (
     <div onClick={() => setOpenModal(false)} className="modal">
@@ -30,18 +32,15 @@ export default function Modal({ setOpenModal, bookData, folder_name }) {
               <span>Price: </span>${price}
             </p>
             <div className="add-to-cart">
-              <input
-                type="number"
-                name="quantity"
-                min="1"
-                max="100"
-              />
+              <input type="number" name="quantity" min="1" max="100" />
               <button>
                 <i className="bi bi-cart-plus"></i>
                 Add to Cart
               </button>
             </div>
-            <button className="details">See More Details</button>
+            <Link to={`/book/${category}/${id}`} className="details">
+              See More Details
+            </Link>
           </div>
         </div>
       </div>

@@ -43,9 +43,19 @@ footer .info .col .list-title {
 footer .info .col .list-title h4 {
   padding-bottom: 5px;
 }
+footer .info .col ul .li-item {
+  width: fit-content;
+  padding-bottom: 15px;
+  display: block;
+  color: #fff;
+}
+footer .info .col ul .li-item:hover {
+  text-decoration: underline;
+}
 footer .info .col ul li {
   padding-bottom: 15px;
 }
+footer .info .col ul .li-item i,
 footer .info .col ul li i {
   font-size: 22px;
   padding-right: 5px;

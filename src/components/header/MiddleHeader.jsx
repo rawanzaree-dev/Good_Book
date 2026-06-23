@@ -1,14 +1,18 @@
+import { Link } from "react-router-dom";
+
 export default function MiddleHeader() {
   return (
     <div className="middle-header">
-      <div className="logo">
+      <Link to="/" className="logo">
         Book <i className="bi bi-book"></i> Store
-      </div>
+      </Link>
       <div className="search-engine">
         <input type="text" placeholder="Search in Our Book Store" />
         <i className="bi bi-search"></i>
       </div>
-      <i className="bi bi-cart cart-icon"></i>
+      <Link to="/cart" className="cart-icon">
+        <i className="bi bi-cart"></i>
+      </Link>
     </div>
   );
 }
