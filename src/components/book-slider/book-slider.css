@@ -67,9 +67,12 @@
 .book-slider .item .icons {
   font-size: 20px;
   color: #38373b;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
-.book-slider .item .icons .eye {
-  padding-right: 8px;
+.book-slider .item .icons .eye,
+.book-slider .item .icons .cart-icon {
   cursor: pointer;
 }
 

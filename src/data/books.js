@@ -1,4 +1,4 @@
-export const mostGiftedBooks = [
+export const books = [
   {
     id: 1,
     price: 10.5,
@@ -139,11 +139,8 @@ export const mostGiftedBooks = [
     inStock: false,
     category: "gifted",
   },
-];
-
-export const bestSeller = [
   {
-    id: 1,
+    id: 11,
     price: 10.5,
     rating: 5,
     title: "1984",
@@ -157,7 +154,7 @@ export const bestSeller = [
     category: "best-seller",
   },
   {
-    id: 2,
+    id: 12,
     price: 14,
     rating: 5,
     title: "The Merchant Of Venice",
@@ -171,7 +168,7 @@ export const bestSeller = [
     category: "best-seller",
   },
   {
-    id: 3,
+    id: 13,
     price: 12.58,
     rating: 5,
     title: "How To Speak Effectively",
@@ -185,7 +182,7 @@ export const bestSeller = [
     category: "best-seller",
   },
   {
-    id: 4,
+    id: 14,
     price: 9.05,
     rating: 5,
     title: "Power Of Habits",
@@ -199,7 +196,7 @@ export const bestSeller = [
     category: "best-seller",
   },
   {
-    id: 5,
+    id: 15,
     price: 8,
     rating: 4,
     title: "Les Miserables",
@@ -213,7 +210,7 @@ export const bestSeller = [
     category: "best-seller",
   },
   {
-    id: 6,
+    id: 16,
     price: 7.05,
     rating: 4.5,
     title: "Introvert Survival Tactics",
@@ -227,7 +224,7 @@ export const bestSeller = [
     category: "best-seller",
   },
   {
-    id: 7,
+    id: 17,
     price: 21,
     rating: 3.5,
     title: "Good Expectations",
@@ -241,7 +238,7 @@ export const bestSeller = [
     category: "best-seller",
   },
   {
-    id: 8,
+    id: 18,
     price: 11.05,
     rating: 4.5,
     title: "I am Joseph",
@@ -255,7 +252,7 @@ export const bestSeller = [
     category: "best-seller",
   },
   {
-    id: 9,
+    id: 19,
     price: 16.45,
     rating: 4.5,
     title: "Soldiers Talk",
@@ -269,7 +266,7 @@ export const bestSeller = [
     category: "best-seller",
   },
   {
-    id: 10,
+    id: 20,
     price: 5.98,
     rating: 4.5,
     title: "The Subtle Art of Not Giving a Fuck",
@@ -282,11 +279,8 @@ export const bestSeller = [
     inStock: false,
     category: "best-seller",
   },
-];
-
-export const mostWishedFor = [
   {
-    id: 1,
+    id: 21,
     price: 13.99,
     rating: 5,
     title: "Obviously Awesome",
@@ -300,7 +294,7 @@ export const mostWishedFor = [
     category: "wished",
   },
   {
-    id: 2,
+    id: 22,
     price: 11.5,
     rating: 4.5,
     title: "The Happiness Advantage",
@@ -314,7 +308,7 @@ export const mostWishedFor = [
     category: "wished",
   },
   {
-    id: 3,
+    id: 23,
     price: 10.49,
     rating: 4,
     title: "The Innovator's Dilemma",
@@ -328,7 +322,7 @@ export const mostWishedFor = [
     category: "wished",
   },
   {
-    id: 4,
+    id: 24,
     price: 9.99,
     rating: 4,
     title: "Radical Respect",
@@ -342,7 +336,7 @@ export const mostWishedFor = [
     category: "wished",
   },
   {
-    id: 5,
+    id: 25,
     price: 18.75,
     rating: 5,
     title: "Good To Greate",
@@ -356,7 +350,7 @@ export const mostWishedFor = [
     category: "wished",
   },
   {
-    id: 6,
+    id: 26,
     price: 7.99,
     rating: 4.5,
     title: "Birds of Jerusalem",
@@ -370,7 +364,7 @@ export const mostWishedFor = [
     category: "wished",
   },
   {
-    id: 7,
+    id: 27,
     price: 16.99,
     rating: 5,
     title: "The How of Happiness",
@@ -384,7 +378,7 @@ export const mostWishedFor = [
     category: "wished",
   },
   {
-    id: 8,
+    id: 28,
     price: 12.25,
     rating: 4.5,
     title: "Al Sira is Continuous",
@@ -398,7 +392,7 @@ export const mostWishedFor = [
     category: "wished",
   },
   {
-    id: 9,
+    id: 29,
     price: 15.25,
     rating: 5,
     title: "The Highly Sensitive Person",
@@ -412,7 +406,7 @@ export const mostWishedFor = [
     category: "wished",
   },
   {
-    id: 10,
+    id: 30,
     price: 14.5,
     rating: 5,
     title: "My tree, the magnificent orange tree",

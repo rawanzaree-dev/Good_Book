@@ -77,6 +77,20 @@ header .middle-header .search-engine i {
 }
 header .middle-header .cart-icon {
     color: #fff;
+    position: relative;
+}
+header .middle-header .cart-icon .cart-notification {
+    width: 20px;
+    height: 20px;
+    background-color: #f00;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    position: absolute;
+    top: -8px;
+    right: -8px;
 }
 header nav {
     background-color: var(--main-color);

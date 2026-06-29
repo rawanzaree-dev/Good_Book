@@ -1,26 +1,19 @@
 import { useParams } from "react-router-dom";
-import { mostGiftedBooks } from "../../data/books";
-import { bestSeller } from "../../data/books";
-import { mostWishedFor } from "../../data/books";
+import { books } from "../../data/books";
 import Rating from "../../components/rating/Rating";
 import "../../components/rating/rating.css";
 import "./book.css";
+import { useContext, useState } from "react";
+import CartContext from "../../context/cartContext";
+import getFolderName from "../../utils/getFolderName";
 
 export default function Book() {
-  const { category, id } = useParams();
-  let book = "",
-    folder_name = "";
+  const { addToCart } = useContext(CartContext);
+  const [qty, setQty] = useState(1);
 
-  if (category === "gifted") {
-    book = mostGiftedBooks.find((b) => b.id === +id);
-    folder_name = "most-gifted-books";
-  } else if (category === "best-seller") {
-    book = bestSeller.find((b) => b.id === +id);
-    folder_name = "best-seller-books";
-  } else if (category === "wished") {
-    book = mostWishedFor.find((b) => b.id === +id);
-    folder_name = "most-wished-for";
-  }
+  const { category, id } = useParams();
+  const book = books.find((b) => b.id === +id),
+   folder_name = getFolderName(category);
 
   return (
     <div className="book">
@@ -36,8 +29,15 @@ export default function Book() {
             </p>
             <Rating rating={book.rating} reviews={book.reviews} />
             <div className="add-to-cart">
-              <input type="number" name="quantity" min="1" max="100" />
-              <button>
+              <input
+                type="number"
+                name="quantity"
+                min="1"
+                max="100"
+                value={qty}
+                onChange={(e) => setQty(e.target.value)}
+              />
+              <button onClick={() => addToCart({ ...book, quantity: qty })}>
                 <i className="bi bi-cart-plus"></i>
                 Add to Cart
               </button>

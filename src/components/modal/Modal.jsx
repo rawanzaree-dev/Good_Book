@@ -1,10 +1,27 @@
+import { useContext, useState } from "react";
 import Rating from "../rating/Rating";
 import "./modal.css";
 import { Link } from "react-router-dom";
+import CartContext from "../../context/cartContext";
+import getFolderName from "../../utils/getFolderName";
 
-export default function Modal({ setOpenModal, bookData, folder_name }) {
-  const { title, inStock, rating, reviews, author, price, image, id, category } =
-    bookData;
+export default function Modal({ setOpenModal, bookData}) {
+  const [qty, setQty] = useState(1),
+  { addToCart } = useContext(CartContext);
+
+  const {
+    title,
+    inStock,
+    rating,
+    reviews,
+    author,
+    price,
+    image,
+    id,
+    category,
+  } = bookData;
+
+  const folder_name= getFolderName(bookData.category);
 
   return (
     <div onClick={() => setOpenModal(false)} className="modal">
@@ -32,8 +49,15 @@ export default function Modal({ setOpenModal, bookData, folder_name }) {
               <span>Price: </span>${price}
             </p>
             <div className="add-to-cart">
-              <input type="number" name="quantity" min="1" max="100" />
-              <button>
+              <input
+                type="number"
+                name="quantity"
+                min="1"
+                max="100"
+                value={qty}
+                onChange={(e) => setQty(e.target.value)}
+              />
+              <button onClick={() => addToCart({...bookData, quantity: qty})}>
                 <i className="bi bi-cart-plus"></i>
                 Add to Cart
               </button>
