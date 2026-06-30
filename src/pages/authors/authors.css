@@ -1,0 +1,41 @@
+.authors {
+  padding-block: var(--padding-section);
+}
+.authors .search-box {
+  width: 100%;
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  border: 1px solid var(--gray-color);
+}
+.authors .search-box input {
+  width: 100%;
+  font-size: 17px;
+  border: none;
+}
+.authors .content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+.authors .content .card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid var(--gray-color);
+}
+.authors .content .card .image {
+  width: 100%;
+}
+.authors .content .card .image img {
+  border-radius: 10px;
+  width: 100%;
+}
+.authors .content .card .author-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 5px;
+}
