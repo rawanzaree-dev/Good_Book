@@ -1,5 +1,5 @@
 .book {
-  padding-block: 30px;
+  padding-block: var(--padding-section);
 }
 .book .first-content {
   display: flex;
@@ -31,7 +31,7 @@
   margin-bottom: 10px;
 }
 .book .first-content .first-info .author {
-  color: #808080;
+  color: var(--gray-color);
   font-weight: 600;
 }
 .book .first-content .first-info .author span {
@@ -62,7 +62,6 @@
 }
 .book .second-info {
   display: flex;
-  justify-content: center;
   gap: 25px;
   color: var(--text-color);
 }

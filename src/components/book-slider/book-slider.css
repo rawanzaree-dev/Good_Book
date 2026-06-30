@@ -41,7 +41,7 @@
 }
 .book-slider .item {
   width: 320px;
-  border: 1px solid #808080;
+  border: 1px solid var(--gray-color);
   padding-block: 5px;
   background-color: #f9fbff;
 }

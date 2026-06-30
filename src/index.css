@@ -2,6 +2,9 @@
   --main-color: #efefef;
   --primary-color: #1976d2;
   --text-color: #008080;
+  --icon-color: #dc143c;
+  --padding-section: 30px;
+  --gray-color: #808080;
 }
 
 * {

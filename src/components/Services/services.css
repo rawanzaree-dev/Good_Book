@@ -1,5 +1,5 @@
 .services {
-  padding-block: 30px;
+  padding-block: var(--padding-section);
 }
 .services .container {
   display: grid;
