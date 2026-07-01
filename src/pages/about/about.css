@@ -1,0 +1,21 @@
+.about {
+  min-height: calc(100vh - 200px);
+  padding: 50px;
+}
+.about h2 {
+  width: fit-content;
+  color: var(--gray-color);
+  font-size: 28px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--gray-color);
+}
+.about .text {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 17px;
+}
+.about .text span {
+  font-weight: 700;
+}
